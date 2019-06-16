@@ -6,10 +6,10 @@
                 url: "/Person/Index",
                 data: {
                     person: {
-                        FirstName: $("#txtFirstName").val(),
-                        LastName: $("#txtLastName").val(),
+                        FirstName: NameFormat($("#txtFirstName").val().trim()),
+                        LastName: NameFormat($("#txtLastName").val().trim()),
                         Gender: $("input[type=radio]:checked").val(),
-                        Email: $("#txtEmail").val(),
+                        Email: $("#txtEmail").val().trim(),
                         Phone: $("#txtPhone").val(),
                         Country: $("option:selected").text()
                     }
@@ -47,9 +47,23 @@ function Validate() {
     return access;
 }
 
+function NameFormat(str) {
+    var splitStr = str.toLowerCase().split(' ');
+    for (var i = 0; i < splitStr.length; i++) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+    }
+    return splitStr.join(' ');
+}
+
 $('#txtPhone').keypress(function (event) {
 
-    if (event.which != 8 && isNaN(String.fromCharCode(event.which))) {
+    if ((event.which != 8 && isNaN(String.fromCharCode(event.which))) || event.which === 32) {
         event.preventDefault();
     }
 })
+
+$(".name").keypress(function (event) {
+    if (!(event.which >= 65 && event.which <= 120) && (event.which != 32 && event.which != 0)) {
+        event.preventDefault();
+    }
+});

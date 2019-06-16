@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Erika\\source\\repos\\nVisionTest\\nVisionTest\\nVisionTest.csproj": {}
+    "C:\\Users\\Erika\\Documents\\GitHub\\nVisionTest\\nVisionTest\\nVisionTest\\nVisionTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Erika\\source\\repos\\nVisionTest\\nVisionTest\\nVisionTest.csproj": {
+    "C:\\Users\\Erika\\Documents\\GitHub\\nVisionTest\\nVisionTest\\nVisionTest\\nVisionTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erika\\source\\repos\\nVisionTest\\nVisionTest\\nVisionTest.csproj",
+        "projectUniqueName": "C:\\Users\\Erika\\Documents\\GitHub\\nVisionTest\\nVisionTest\\nVisionTest\\nVisionTest.csproj",
         "projectName": "nVisionTest",
-        "projectPath": "C:\\Users\\Erika\\source\\repos\\nVisionTest\\nVisionTest\\nVisionTest.csproj",
+        "projectPath": "C:\\Users\\Erika\\Documents\\GitHub\\nVisionTest\\nVisionTest\\nVisionTest\\nVisionTest.csproj",
         "packagesPath": "C:\\Users\\Erika\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erika\\source\\repos\\nVisionTest\\nVisionTest\\obj\\",
+        "outputPath": "C:\\Users\\Erika\\Documents\\GitHub\\nVisionTest\\nVisionTest\\nVisionTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
