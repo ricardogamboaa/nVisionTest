@@ -1,4 +1,5 @@
 ﻿$(document).ready(
+    //If all data is valid, calls controller to insert the person object
     $("#btnSubmit").click(function () {
         if (Validate()) {
             $.ajax({
@@ -29,6 +30,7 @@
     })
 );
 
+//Validate all the form
 function Validate() {
     var access = true;
     $("input[type=text]").each(function () {
@@ -47,6 +49,7 @@ function Validate() {
     return access;
 }
 
+//Give name format to a string
 function NameFormat(str) {
     var splitStr = str.toLowerCase().split(' ');
     for (var i = 0; i < splitStr.length; i++) {
@@ -55,13 +58,15 @@ function NameFormat(str) {
     return splitStr.join(' ');
 }
 
+//Allow the user to write a new phone number only with numbers
 $('#txtPhone').keypress(function (event) {
 
     if ((event.which != 8 && isNaN(String.fromCharCode(event.which))) || event.which === 32) {
         event.preventDefault();
     }
-})
+});
 
+//Allow the user to write a new name just with letters and white spaces
 $(".name").keypress(function (event) {
     if (!(event.which >= 65 && event.which <= 120) && (event.which != 32 && event.which != 0)) {
         event.preventDefault();
