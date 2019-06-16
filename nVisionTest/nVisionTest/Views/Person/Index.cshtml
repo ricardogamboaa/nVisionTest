@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@section Scripts
+{
+    <script src="@Url.Content("~/js/Person.js")"></script>
+}
+<h3>Person form</h3>
+<div>
+    <!--Fist name-->
+    <div class="form-group">
+        <label for="txtFirstName">First Name</label>
+        <input type="text" class="form-control" id="txtFirstName" placeholder="Enter first name">
+        <label style="color:red; display:none;" id="lbltxtFirstName" class="validate">Please write a valid name!</label>
+    </div>
+    <!--Last name-->
+    <div class="form-group">
+        <label for="txtLastName">Last Name</label>
+        <input type="text" class="form-control" id="txtLastName" placeholder="Enter last name">
+        <label style="color:red; display:none;" id="lbltxtLastName" class="validate">Please write a valid name!</label>
+    </div>
+    <!--Gender-->
+    <label>Gender</label>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="GenderRadios" id="rdMale" value="Male" checked>
+        <label class="form-check-label" for="rdMale">
+            Male
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="GenderRadios" id="rdFemale" value="Female">
+        <label class="form-check-label" for="rdFemale">
+            Female
+        </label>
+    </div>
+    <!--Email-->
+    <div class="form-group">
+        <label for="txtEmail">Email address</label>
+        <input type="text" class="form-control" id="txtEmail" aria-describedby="emailHelp" placeholder="Enter email">
+        <label style="color:red; display:none;" id="lbltxtEmail" class="validate">Please write a valid email!</label>
+    </div>
+    <!--Phone-->
+    <div class="form-group">
+        <label for="txtPhone">Phone</label>
+        <input type="text" class="form-control" id="txtPhone" placeholder="Enter phone">
+        <label style="color:red; display:none;" id="lbltxtPhone" class="validate">Please write a valid phone!</label>
+    </div>
+    <!--Country-->
+    <div class="form-group">
+        <label for="sltCountry">Country</label>
+        <select class="form-control" id="sltCountry">
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Costa Rica</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+</div>
+
